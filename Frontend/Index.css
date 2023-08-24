@@ -4,7 +4,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+
   background: linear-gradient(#141e30, #243b55);
 }
 
@@ -12,6 +12,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  font-size: 16px;
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
@@ -75,11 +76,13 @@ body {
   margin-top: 40px;
   letter-spacing: 4px;
 }
-.login-box .user-radio {
-  color: #fff;
+.user-radio {
+  color: #03e9f4;
+  font-size: 13px;
 }
-.login-box .user-dropdown {
-  color: #fff;
+.user-dropdown {
+  color: #03e9f4;
+  font-size: 13px;
 }
 
 .login-box a:hover {
@@ -151,6 +154,22 @@ body {
   100% {
     right: 100%;
   }
+}
+.custom-button {
+  display: inline-block;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s;
 }
 
 .login-box a span:nth-child(4) {
