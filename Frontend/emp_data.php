@@ -22,6 +22,14 @@ if(isset($_POST['id']) && isset($_POST['name']) && isset($_POST['gender']) && is
     $sql = "INSERT INTO employeerecods.employee(EmpID, EmpName, EmpGender, EmpLocation, EmpAge, EmpBloodGroup) 
             VALUES('$id', '$name', '$gender', '$location', '$age', '$bgroup')";
 
+if(mysqli_query($conn, $sql) === TRUE){
+    echo "<script>alert('Details added'); window.location.href='userInterface.php';</script>";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+} else {
+echo "Missing or incomplete POST data.";
+}
 
 mysqli_close($conn);
 ?>
