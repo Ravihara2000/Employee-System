@@ -51,3 +51,7 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "<tr><td colspan='6'>Empty Table</td></tr></table>";
 }
+
+mysqli_close($conn);
+
+?>
