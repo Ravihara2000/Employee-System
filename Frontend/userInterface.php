@@ -5,7 +5,7 @@
   <body>
     <div class="login-box">
       <h2>Employee Records System</h2>
-      <form>
+      <form action="emp_data.php" action="POST">
         <div class="user-box">
           <input type="number" name="eid" />
           <label>Employee ID</label>
